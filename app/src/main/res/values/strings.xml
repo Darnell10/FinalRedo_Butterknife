@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FinalButterknife</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_user_name">Enter user name</string>
+</resources>
