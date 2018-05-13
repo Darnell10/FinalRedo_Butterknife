@@ -1,15 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.d.finalbutterknife.BreedsActivity">
 
     <TextView
-        android:text="hello"
-        android:textSize="50dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="@string/dog_question"
+        android:textSize="40sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:elevation="@dimen/cardview_default_radius"
+        android:padding="@dimen/cardview_default_radius"
+        app:cardElevation="2sp"
+        app:cardMaxElevation="2sp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/terrier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/terrier"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:id="@+id/terrier_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_launcher_background" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:cardElevation="2sp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/spaniel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/spaniel"
+            android:textSize="50sp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/spaniel_image"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_launcher_background" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:cardElevation="2sp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/retriever"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/retriever"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:id="@+id/retriever_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_launcher_background" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:cardElevation="2sp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+
+            android:id="@+id/poodle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/poodle"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:id="@+id/poodle_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_launcher_background" />
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
