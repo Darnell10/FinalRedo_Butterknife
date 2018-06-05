@@ -10,11 +10,12 @@ import retrofit2.http.Path;
  * Created by D on 5/13/18.
  */
 
-public interface DogAPI {
+public interface DogApiService {
 
     //https://dog.ceo/api/breed/retriever/images/random
 
     @GET("api/breed/{breed}/images/random")
-    Call<Breeds> getBreeds(@Path("breed") String breed);
+    Call<Breeds> getBreeds(@Path("breed") String breeds);
+
 
 }
